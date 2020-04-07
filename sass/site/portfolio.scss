@@ -1,0 +1,93 @@
+.portfolio {
+  &__warp {
+    @extend .warps;
+  }
+  &__title {
+    text-align: center;
+    &--indent {
+      padding-bottom: 50px;
+      @media (max-width: $desktop) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    width: 33.33%;
+    &:after {
+      /////////////////////////////////////////
+      /////////////////////////////////////////
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 1px solid rgba(0,0,0,.2);
+      transition: background-color $transition-time ease;
+    }
+    &:hover {
+      &:after {
+        background-color: rgba(0,0,0,.05);
+      }
+    }
+    &--double {
+      width: 66.66%;
+    }
+  }
+
+  &__places-img {
+    height: 100%;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__parinators {
+    display:flex;
+    list-style:none;
+    justify-content: center;
+  }
+  &__element {
+    @media (max-width: $tablet) {
+      &:nth-child(n+6):not(:last-child) {
+        display: none;
+      }
+    }
+  }
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-family: 'Montserrat', sans-serif;
+    @include font(normal, 18px,24px);
+    @media (max-width: $desktop) {
+      @include font(normal, 12px,24px);
+    }
+
+    &.active {
+      color: $primary;
+      //border: 1px solid #000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &--indent {
+    padding-top: 75px;
+    padding-bottom: 110px;
+    @media (max-width: $desktop) {
+      padding-top: 30px;
+      padding-bottom: 70px;
+    }
+  }
+}

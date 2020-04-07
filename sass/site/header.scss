@@ -1,0 +1,125 @@
+.header {
+  &__warp {
+    @extend .warps;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--indent {
+      padding-top: 50px;
+      padding-bottom: 55px;
+      @media (max-width: $desktop) {
+        padding-top: 30px;
+        padding-bottom: 60px;
+      }
+      @media (max-width: $tablet) {
+        padding-top: 15px;
+        padding-bottom: 80px;
+      }
+    }
+  }
+  &__logo-block {
+    @media (max-width: $desktop) {
+      width: 30px;
+    }
+    @media (max-width: $tablet) {
+      width: 24px;
+    }
+  }
+  &__logo {
+    width: 100%;
+  }
+  &__nav {
+    @media (max-width: $tablet) {
+      order: 1;
+    }
+  }
+  &__label {
+    margin: 0 auto;
+    width: 55%;
+    @media (max-width: $desktop) {
+      width: 75%;
+    }
+    &--indent {
+      padding-bottom: 50px;
+      @media (max-width: $desktop) {
+        padding-bottom: 30px;
+      }
+      @media (max-width: $tablet) {
+        padding-bottom: 35px;
+      }
+    }
+  }
+  &__title {
+    color: $white;
+    text-align: center;
+
+    &--indent {
+      padding-bottom: 75px;
+      @media (max-width: $desktop) {
+        padding-bottom: 50px;
+      }
+    }
+  }
+  &__social {
+    justify-content: space-between;
+    width: 165px;
+    @media (max-width: $desktop) {
+      width: 95px;
+    }
+  }
+  &__video-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--indent {
+      margin-bottom: 85px;
+      @media (max-width: $desktop) {
+        margin: 0;
+      }
+      @media (max-width: $tablet) {
+        margin-bottom: 115px;
+      }
+    }
+  }
+  &__manual {
+    color: $light;
+    margin: 0 auto;
+    @include square-size(20px);
+    .svg {
+      @include square-size(20px);
+    }
+    @media (max-width: $desktop) {
+      display: none;
+    }
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &--bg {
+    position: relative;
+    //background: url("/images/background-header.png") no-repeat center center/cover;
+    background: url("/images/background-header -temp.png") no-repeat center center/cover;
+    &:after {
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,1);
+      //background-color: rgba(0,0,0,.5);
+    }
+  }
+  &--indent {
+    padding-bottom: 30px;
+    @media (max-width: $desktop) {
+      padding-bottom: 120px;
+    }
+    @media (max-width: $tablet) {
+      padding-bottom: 30px;
+    }
+
+  }
+}

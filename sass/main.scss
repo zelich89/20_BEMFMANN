@@ -1,6 +1,30 @@
 //@import "site/utilites/utilites";
 
-@import "site/style";
+
+@import "site/variables";
+@import "site/extended";
+@import "site/mixins";
+@import "site/maket";
+@import "site/__types";
+
+@import "site/body";
+
+@import "site/burger";
+@import "site/video";
+@import "site/button";
+@import "site/card";
+
+@import "site/header";
+@import "site/top-nav";
+@import "site/social";
+@import "site/features";
+@import "site/version";
+@import "site/testimonials";
+@import "site/plan";
+@import "site/portfolio";
+@import "site/team";
+@import "site/contacts";
+
 //@import "site/backgrounds";
 //@import "site/borders";
 //@import "site/buttons";
@@ -10,7 +34,16 @@
 //@import "site/menu";
 //@import "site/sizes";
 //@import "site/svgs";
-//@import "site/variables";
 //@import "site/z-index";
 
 //@import "site/null-bs";
+
+
+
+
+
+
+
+
+
+@import "site/zel";

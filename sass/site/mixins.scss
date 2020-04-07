@@ -1,0 +1,29 @@
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin font ($font-weight, $font-size, $line-height) {
+  //font: $font-weight #{$font-size}/#{$line-height} sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin square-size ($ss) {
+  width: $ss;
+  height: $ss;
+}

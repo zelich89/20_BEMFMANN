@@ -1,0 +1,39 @@
+.video {
+  position: relative;
+  &__screen {
+    width: 555px;
+    @media (max-width: $desktop) {
+      width: 350px;
+    }
+    @media (max-width: $tablet) {
+      width: 240px;
+    }
+  }
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba($light, .75);
+    @include square-size(72px);
+    @media (max-width: $desktop) {
+      @include square-size(56px);
+    }
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__tria {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 16px solid transparent;
+    @media (max-width: $desktop) {
+      border: 12px solid transparent;
+      border-left-color: rgba($darker, .75);
+      border-right: none;
+    }
+    border-left-color: rgba($darker, .75);
+    border-right: none;
+  }
+}

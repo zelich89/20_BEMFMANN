@@ -1,0 +1,105 @@
+.card {
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+  @media (max-width: $desktop) {
+    padding: 30px 25px;
+  }
+  @media (max-width: $tablet) {
+    padding: 25px;
+  }
+  &__name {
+    text-transform: uppercase;
+    &--primary {
+      color: $primary
+    }
+    &--darker {
+      color: $darker
+    }
+    &--indent {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      @media (max-width: $desktop) {
+        padding-top: 0;
+      }
+      @media (max-width: $tablet) {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  &__priсe-block {
+    display: flex;
+    align-items: center;
+    &--indent {
+      padding-bottom: 5px;
+      @media (max-width: $desktop) {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__currency {
+    font-family: 'Montserrat', sans-serif;
+    @include font(normal, 24px,1);
+    @media (max-width: $desktop) {
+      @include font(normal, 11px,1);
+    }
+  }
+  &__priсe {
+    font-family: 'Montserrat', sans-serif;
+    @include font(bold, 64px,1);
+    @media (max-width: $desktop) {
+      @include font(bold, 36px,1);
+    }
+  }
+  &__long {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    @include font(bold, 18px,27px);
+    @media (max-width: $desktop) {
+      @include font(bold, 12px,27px);
+    }
+    &--indent {
+      padding-bottom: 25px;
+      @media (max-width: $desktop) {
+        padding-bottom: 5px;
+      }
+      @media (max-width: $tablet) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  &__description {
+    font-family: 'Montserrat', sans-serif;
+    @include font(normal, 16px,24px);
+    @media (max-width: $desktop) {
+      @include font(normal, 11px,18px);
+    }
+    &--indent {
+      padding-bottom: 25px;
+      @media (max-width: $desktop) {
+        padding-bottom: 15px;
+      }
+      @media (max-width: $tablet) {
+        padding-bottom: 20px;
+      }
+    }
+
+    /*
+    overflow: hidden;
+    text-overflow: ellipsis;*/
+    white-space: nowrap;
+
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $darker;
+  }
+  &--darker {
+    background-color: $darker;
+    color: $white;
+  }
+}

@@ -1,0 +1,35 @@
+body {
+  min-width: 310px
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  vertical-align: top;
+}
+
+.visible-on-desktop {
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.visible-on-tab {
+  display: none;
+  @media (max-width: $desktop) {
+    display: block;
+  }
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.visible-on-mobile {
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}

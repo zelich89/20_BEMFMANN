@@ -1,0 +1,17 @@
+.burger {
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
+  }
+  &__bar {
+    display: block;
+    height: 2px;
+    width: 16px;
+    background: #fff;
+    margin: 4px auto;
+    &--half {
+      transform: scaleX(0.5);
+      transform-origin: right;
+    }
+  }
+}

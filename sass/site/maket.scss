@@ -1,0 +1,37 @@
+.maket {
+  position: relative;
+  &__pos {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .3;
+    z-index: 11;
+    pointer-events: none;
+    display: none;
+    &--desktop {
+      @if $maket-visible == 1 {
+        display: block;
+        @media (max-width: $desktop) {
+          display: none;
+        }
+      }
+    }
+    &--tablet {
+      @if $maket-visible == 1 {
+        @media (max-width: $desktop) {
+          display: block;
+        }
+        @media (max-width: $tablet) {
+          display: none;
+        }
+      }
+    }
+    &--mobile {
+      @if $maket-visible == 1 {
+        @media (max-width: $tablet) {
+          display: block;
+        }
+      }
+    }
+  }
+}

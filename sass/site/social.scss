@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+  outline: none;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $white;
+
+
+    &--primary {
+      color: $primary;
+    }
+    &--darker {
+      color: $darker;
+    }
+
+    &--big {
+      @include square-size(24px);
+      margin-right: 45px;
+      @media (max-width: $desktop) {
+        @include square-size(16px);
+        margin-right: 20px;
+      }
+    }
+    &--small {
+      @include square-size(18px);
+      padding-right: 15px;
+    }/*
+    &:not(:last-child) {
+      margin-right: 15px;
+    }*/
+  }
+}

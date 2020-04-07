@@ -1,0 +1,15 @@
+.warps {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: $content-width-desk;
+  @media (max-width: $desktop) {
+    max-width: $content-width-tab;
+  }
+  @media (max-width: $tablet) {
+    max-width: $content-width-mob;
+  }
+/*
+  @media (max-width: $tablet) {
+    max-width: $content-width-mob;
+  }*/
+}

@@ -1,0 +1,112 @@
+.features {
+  &__warp {
+    @extend .warps;
+  }
+
+  &__title {
+    text-align: center;
+    color: $darker;
+    &--indent {
+      padding-bottom: 30px;
+      @media (max-width: $desktop) {
+        padding-bottom: 25px;
+      }
+      @media (max-width: $tablet) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  &__description {
+    text-align: center;
+    text-transform: uppercase;
+    color: $darker;
+    &--indent {
+      padding-bottom: 55px;
+      @media (max-width: $desktop) {
+        padding-bottom: 50px;
+      }
+      @media (max-width: $tablet) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+  &__items {
+    width: 30%;
+    @media (max-width: $desktop) {
+      width: auto;
+    }
+
+    &--indent {
+      padding: 35px 0 0 10px;
+      @media (max-width: $desktop) {
+        padding: 30px 0 0 25px;
+      }
+      @media (max-width: $tablet) {
+        padding: 0 0 30px 20px;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    &--indent {
+      padding-bottom: 35px;
+      @media (max-width: $desktop) {
+        padding-bottom: 60px;
+      }
+      @media (max-width: $tablet) {
+        padding-bottom: 30px;
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__text {
+
+    &--intent {
+      padding-left: 20px;
+      @media (max-width: $desktop) {
+        padding-left: 10px;
+      }
+    }
+  }
+  &__name {
+    color: $darker;
+    text-transform: uppercase;
+    &--indent {
+      padding-bottom: 8px;
+    }
+  }
+  &__picture-block {
+    overflow-x: hidden;
+  }
+  &__picture-big {
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  &__picture-small {
+    display: none;
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+  &--indent {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    @media (max-width: $desktop) {
+      padding-top: 40px;
+      padding-bottom: 35px;
+    }
+    @media (max-width: $tablet) {
+      padding-top: 35px;
+      padding-bottom: 40px;
+    }
+  }
+}

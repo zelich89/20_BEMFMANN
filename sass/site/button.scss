@@ -1,0 +1,44 @@
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  border: none;
+  outline: 0;
+  border-radius: 50px;
+  @media (max-width: $desktop) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  transition: all .2s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  &--primary-color {
+    background-color: $primary;
+    color: $darker;
+  }
+  &--darker-color {
+    background-color: $darker;
+    color: $white;
+  }
+  &--main-size {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    @media (max-width: $tablet) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+  &--small-size {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @media (max-width: $desktop) {
+      padding: 10px 13px;
+    }
+    @media (max-width: $tablet) {
+      padding: 6px 24px;
+    }
+  }
+}
