@@ -88,6 +88,15 @@
                       transform="translate(1 1)" id="phone" fill="#4B4B4B" stroke="none"/>
             </g>
         </symbol>
+        <symbol viewBox="0 0 18 11" id="icon-views">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 5.5C18 5.5 14.2191 11 9 11C3.78091 11 0 5.5 0 5.5C0 5.5 3.78091 0 9 0C14.2191 0 18 5.5 18 5.5ZM11.25 5.5C11.25 6.88071 10.2426 8 9 8C7.75736 8 6.75 6.88071 6.75 5.5C6.75 4.11929 7.75736 3 9 3C10.2426 3 11.25 4.11929 11.25 5.5Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 15 12" id="icon-likes">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.10954 12C10.6643 9.63015 14.2191 7.26031 14.2191 3.70554C14.2191 1.25028 10.6643 -2.21908 7.10954 1.92815C3.55477 -2.21908 0 1.25028 0 3.70554C0 7.26031 3.55477 9.63015 7.10954 12Z" fill="currentColor"/>
+        </symbol>
+        <symbol viewBox="0 0 15 12" id="icon-comments">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.89543 0 2V7C0 8.10457 0.89543 9 2 9H3V12L7 9H12C13.1046 9 14 8.10457 14 7V2C14 0.895431 13.1046 0 12 0H2Z" fill="currentColor"/>
+        </symbol>
 
     </svg>
 </head>
@@ -440,37 +449,59 @@
         <div class="portfolio__items">
             <div class="portfolio__item">
                 <div class="portfolio__places-img">
-                    <img class="portfolio__img" src="http://www.placehold.it/380" alt="" >
+                    <img class="portfolio__img" src="images/pcard-1.png" alt="" >
                 </div>
             </div>
             <div class="portfolio__item portfolio__item--double">
                 <div class="portfolio__places-img">
-                    <img class="portfolio__img" src="http://www.placehold.it/380" alt="" >
+                    <img class="portfolio__img" src="images/pcard-2.png" alt="" >
+                    <div class="portfolio__back">
+                        <div class="portfolio__description portfolio__description--left">
+                            <div class="portfolio__name portfolio__name--indent">
+                                Blue Mountains
+                            </div>
+                            <div class="portfolio__under portfolio__under--indent">
+                                17 Apr 2016
+                            </div>
+                            <div class="portfolio__rect portfolio__rect--indent"></div>
+                            <div class="portfolio__text portfolio__text--indent">Planning a vacation to Europe? No doubt you have certain expectations about your upcoming journey.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="portfolio__item portfolio__item--double">
                 <div class="portfolio__places-img">
-                    <img class="portfolio__img" src="http://www.placehold.it/380" alt="" >
+                    <img class="portfolio__img" src="images/pcard-3.png" alt="" >
                 </div>
             </div>
             <div class="portfolio__item">
                 <div class="portfolio__places-img">
-                    <img class="portfolio__img" src="http://www.placehold.it/380" alt="" >
+                    <img class="portfolio__img" src="images/pcard-4.png" alt="" >
                 </div>
             </div>
             <div class="portfolio__item">
                 <div class="portfolio__places-img">
-                    <img class="portfolio__img" src="http://www.placehold.it/380" alt="" >
+                    <img class="portfolio__img" src="images/pcard-5.png" alt="" >
+                </div>
+            </div>
+            <div class="portfolio__item portfolio__item--text">
+                <div class="portfolio__places-img">
+                    <div class="portfolio__description portfolio__description--color-darker">
+                        <div class="portfolio__name portfolio__name--indent">
+                            Scenery Photos
+                        </div>
+                        <div class="portfolio__under portfolio__under--indent">
+                            BY EVGENY METILAN
+                        </div>
+                        <div class="portfolio__rect portfolio__rect--color-darker portfolio__rect--indent"></div>
+                        <div class="portfolio__big">Wild <br class="invisible-on-mobile">Nature</div>
+                    </div>
+                    <img class="portfolio__img portfolio__img--opacity" src="http://www.placehold.it/380" alt="" >
                 </div>
             </div>
             <div class="portfolio__item">
                 <div class="portfolio__places-img">
-                    <img class="portfolio__img" src="http://www.placehold.it/380" alt="" >
-                </div>
-            </div>
-            <div class="portfolio__item">
-                <div class="portfolio__places-img">
-                    <img class="portfolio__img" src="http://www.placehold.it/380" alt="" >
+                    <img class="portfolio__img" src="images/pcard-6.png" alt="" >
                 </div>
             </div>
         </div>
@@ -524,7 +555,7 @@
 </section>
 
 <!--        7       -->
-<section class="contacts">
+<section class="contacts contacts--indent">
     <div class="contacts__warp">
         <h2 class="contacts__title contacts__title--indent">Stay In Touch</h2>
         <div class="contacts__items">
@@ -602,6 +633,91 @@
 
 </section>
 
-<div class="zel"></div>
+<!--        8       -->
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1744.48911974498!2d-82.47568882271408!3d29.01762556216841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1570351251309!5m2!1sen!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="">    </iframe>
+    <div class="map__block">
+        <div class="map__address">
+            2300 W Arbutus Dr<br><span class="map__address--normal">Cit Spr, FL 34434, USA</span>
+        </div>
+    </div>
+</section>
+
+<!--        9       -->
+<footer class="footer footer--bg footer--indent">
+    <div class="footer__warp">
+        <div class="footer__logo footer__logo--indent">
+            <img class="footer__big-logo" src="images/footer-logo-big.png" alt="">
+            <img class="footer__small-logo" src="images/footer-logo-small.png" alt="">
+        </div>
+        <div class="footer__full">
+            <div class="footer__main">
+                <div class="footer__text footer__text--indent">Hoffman UI Kit was made to help you quickly create beautiful layouts of responsive websites.</div>
+                <div class="footer__copyright footer__copyright--indent">© 2016 Created by Goldenfox</div>
+                <div class="footer__text footer__text--upper footer__text--indent">SUBSCRIBE TO OUR NEWS</div>
+                <label class="footer__input-block">
+                    <input class="footer__input" type="text">
+                </label>
+            </div>
+            <div class="footer__links">
+                <div class="footer__nav footer__nav--indent">
+                    <div class="footer__items">
+                        <div class="footer__item"><a href="#">About Us</a></div>
+                        <div class="footer__item"><a href="#">Testimonials</a></div>
+                        <div class="footer__item"><a href="#">Documentation</a></div>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item"><a href="#">Explore</a> </div>
+                        <div class="footer__item"><a href="#">Blog</a> </div>
+                        <div class="footer__item"><a href="#">Help</a> </div>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item"><a href="#">Contact</a> </div>
+                        <div class="footer__item"><a href="#">News</a> </div>
+                        <div class="footer__item"><a href="#">Privacy</a> </div>
+                    </div>
+                </div>
+                <div class="footer__social-block">
+                    <div class="footer__text footer__text--upper footer__text--indent">FOLLOW US</div>
+                    <div class="footer__social social">
+                        <div class="social__icon social__icon--middle social__icon--primary">
+                            <svg class="svg">
+                                <use xlink:href="#icon-pinterest"></use>
+                            </svg>
+                        </div>
+                        <div class="social__icon social__icon--middle social__icon--primary">
+                            <svg class="svg">
+                                <use xlink:href="#icon-linkedin"></use>
+                            </svg>
+                        </div>
+                        <div class="social__icon social__icon--middle social__icon--primary">
+                            <svg class="svg">
+                                <use xlink:href="#icon-google-plus"></use>
+                            </svg>
+                        </div>
+                        <div class="social__icon social__icon--middle social__icon--primary">
+                            <svg class="svg">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </div>
+                        <div class="social__icon social__icon--middle social__icon--primary">
+                            <svg class="svg">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                        </div>
+                        <div class="social__icon social__icon--middle social__icon--primary">
+                            <svg class="svg">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<div class="zel1"></div>
 </body>
 </html>

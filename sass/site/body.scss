@@ -1,5 +1,8 @@
 body {
-  min-width: 310px
+  min-width: 310px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -31,5 +34,11 @@ img {
   display: none;
   @media (max-width: $tablet) {
     display: block;
+  }
+}
+
+.invisible-on-mobile {
+  @media (max-width: $tablet) {
+    display: none;
   }
 }

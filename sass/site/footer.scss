@@ -1,0 +1,139 @@
+.footer {
+  &__warp {
+    @extend .warps;
+  }
+  &__full {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+  &__main {
+    width: 25%;
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+    &--indent {
+      padding-bottom: 15px;
+    }
+  }
+  &__logo {
+    &--indent {
+      margin-left: -6px;
+      margin-bottom: 10px;
+      @media (max-width: $desktop) {
+        margin-left: -10px;
+      }
+    }
+  }
+  &__big-logo {
+    @media (max-width: $desktop) {
+      display: none;
+    }
+  }
+  &__small-logo {
+    display: none;
+    @media (max-width: $desktop) {
+      display: block;
+    }
+    @media (max-width: $tablet) {
+      margin: 0 auto;
+    }
+  }
+  &__text {
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+    @include font(bold, 18px, 24px);
+    @media (max-width: $desktop) {
+      @include font(bold, 12px, 16px);
+    }
+    @media (max-width: $tablet) {
+      text-align: center;
+    }
+    &--upper {
+      text-transform: uppercase;
+    }
+    &--indent {
+      padding-bottom: 15px;
+    }
+  }
+  &__copyright {
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+    @include font(normal, 16px, 24px);
+    @media (max-width: $desktop) {
+      @include font(normal, 11px, 16px);
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+    &--indent {
+      padding-bottom: 25px;
+      @media (max-width: $desktop) {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  &__links {
+    width: 50%;
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+  &__nav {
+
+    &--indent {
+      padding-bottom: 45px;
+      @media (max-width: $desktop) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+  &__input-block {
+    border: 1px solid $lighter;
+  }
+  &__input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+    @include font(normal, 16px, 27px);
+    @media (max-width: $desktop) {
+      @include font(normal, 11px, 14px);
+    }
+
+    @media (max-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+  &__social-block {
+    float: right;
+  }
+  &__items {
+    display: flex;
+  }
+  &__item {
+    width: 33%;
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+    @include font(normal, 18px, 24px);
+    padding-bottom: 10px;
+    @media (max-width: $desktop) {
+      @include font(normal, 12px, 16px);
+    }
+    a {
+      color: $white;
+    }
+  }
+  &--bg {
+    background-color: $darker;
+  }
+  &--indent {
+    padding: 40px 0;
+    @media (max-width: $desktop) {
+      padding: 25px 0;
+    }
+  }
+}

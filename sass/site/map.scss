@@ -1,0 +1,38 @@
+.map {
+  position: relative;
+  &__block {
+    position: absolute;
+    top: 62%;
+    left: 65%;
+    width: 190px;
+    height: 80px;
+    border-radius: 5px;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $tablet) {
+      left: 10%;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      border: 15px solid transparent;
+      border-top-color: $primary;
+      top: 99%;
+      left: 25%;
+      transform: translateX(-50%) scaleX(.5);
+    }
+  }
+  &__address {
+    font-family: 'Source Sans Pro', sans-serif;
+    @include font(bold, 12px, 16px);
+    @media (max-width: $desktop) {
+      @include font(bold, 11px, 14px);
+    }
+
+    &--normal {
+      font-weight: normal;
+    }
+  }
+}
