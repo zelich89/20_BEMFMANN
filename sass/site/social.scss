@@ -35,7 +35,7 @@
     }
     &--small {
       @include square-size(18px);
-      padding-right: 15px;
+      margin-right: 15px;
     }/*
     &:not(:last-child) {
       margin-right: 15px;

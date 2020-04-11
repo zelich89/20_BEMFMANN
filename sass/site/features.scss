@@ -67,6 +67,15 @@
       }
     }
   }
+  &__effi-block {
+    color: $darker;
+    .svg {
+      @include square-size($feat-big);
+      @media (max-width: $desktop) {
+        @include square-size($feat-small);
+      }
+    }
+  }
   &__text {
 
     &--intent {

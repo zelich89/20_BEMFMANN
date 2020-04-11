@@ -8,7 +8,7 @@
     align-items: center;
     &--indent {
       padding-top: 50px;
-      padding-bottom: 55px;
+      padding-bottom: 70px;
       @media (max-width: $desktop) {
         padding-top: 30px;
         padding-bottom: 60px;
@@ -37,9 +37,9 @@
   }
   &__label {
     margin: 0 auto;
-    width: 55%;
+    width: 60%;
     @media (max-width: $desktop) {
-      width: 75%;
+      width: 85%;
     }
     &--indent {
       padding-bottom: 50px;
