@@ -28,6 +28,14 @@
     }
     &--indent {
       margin-top: 40px;
+      padding: 25px;
+      @media (max-width: $desktop) {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      @media (max-width: $tablet) {
+        margin-top: 0;
+      }
     }
   }
   &__form {
@@ -37,6 +45,7 @@
   &__insert {
     width: 50%;
     &--long {
+      padding-top: 20px;
       width: 100%;
     }
     &:nth-child(1) {
@@ -87,6 +96,18 @@
     padding-left: 12px;
     @media (max-width: $desktop) {
       padding-left: 6px;
+    }
+  }
+  &__social{
+
+    &--indent {
+      margin-top: 20px;
+      @media (max-width: $desktop) {
+        margin-top: 10px;
+      }
+      @media (max-width: $desktop) {
+        margin-top: 5px;
+      }
     }
   }
   &--indent {

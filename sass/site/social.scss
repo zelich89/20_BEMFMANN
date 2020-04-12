@@ -20,21 +20,38 @@
     &--big {
       @include square-size(24px);
       margin-right: 45px;
+      .svg {
+        @include square-size(24px);
+      }
       @media (max-width: $desktop) {
         @include square-size(16px);
+        .svg {
+          @include square-size(16px);
+        }
         margin-right: 20px;
       }
     }
     &--middle {
       @include square-size(24px);
+      .svg {
+        @include square-size(24px);
+      }
       margin-right: 33px;
       @media (max-width: $desktop) {
         @include square-size(16px);
+        .svg {
+          @include square-size(16px);
+        }
         margin-right: 20px;
       }
     }
     &--small {
+      .svg {
+        @include square-size(18px);
+      }
       @include square-size(18px);
+      .svg {
+      }
       margin-right: 15px;
     }/*
     &:not(:last-child) {

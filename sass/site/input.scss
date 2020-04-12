@@ -1,0 +1,10 @@
+.input {
+
+  &-theme {
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+    //border-color: rgb(153, 153, 153);
+    border-image: initial;
+  }
+}
