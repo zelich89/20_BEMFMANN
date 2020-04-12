@@ -30,18 +30,18 @@
       right: 0;
       bottom: 0;
       left: 0;
-      //border: 1px solid rgba(deeppink,.5);
       transition: background-color $transition-time ease;
       pointer-events: none;
-    }
-    &:hover {
-      &:after {
-        background-color: rgba(0,0,0,.05);
-      }
     }
     &--text {
       @media (max-width: $tablet) {
         width: 100%;
+      }
+        &:after {
+          background-color: #F6F6F6;
+        }
+      & > * {
+        z-index: 1 ;
       }
     }
     &--double {
@@ -63,6 +63,9 @@
       &:nth-child(6) {
         order: 5;
       }
+    }
+    &--intent {
+
     }
   }
 
@@ -93,7 +96,7 @@
       }
     }
     @media (max-width: $desktop) {
-      padding: 40px 20px 20px 20px;
+      padding: 30px 20px 20px 20px;
     }
     @media (max-width: $tablet) {
       padding: 10px 20px 10px 25px;
@@ -174,6 +177,7 @@
     @media (max-width: $tablet) {
       @include font(bold, 16px, 32px);
     }
+    white-space: nowrap;
     &--indent {
       padding-bottom: 5px;
       @media (max-width: $desktop) {
@@ -200,10 +204,20 @@
       }
     }
   }
-  &__parinators {
+  &__paпinators {
     display:flex;
     list-style:none;
     justify-content: center;
+    //background-color: rgba(black, 0.1);/////////////////////////
+    &--indent {
+      margin-top: 65px;
+      @media (max-width: $desktop) {
+        margin-top: 35px;
+      }
+      @media (max-width: $tablet) {
+        margin-top: 25px;
+      }
+    }
   }
   &__element {
     @media (max-width: $tablet) {

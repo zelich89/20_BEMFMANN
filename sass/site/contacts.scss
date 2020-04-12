@@ -15,7 +15,7 @@
   }
   &__item {
     width: 33.33%;
-    //border: 1px solid #000;
+    //border: 1px solid navy;
     @media (max-width: $desktop) {
       width: 50%;
       padding: 50px 15px;
@@ -27,7 +27,7 @@
       width: 100%;
     }
     &--indent {
-
+      margin-top: 40px;
     }
   }
   &__form {
@@ -38,6 +38,12 @@
     width: 50%;
     &--long {
       width: 100%;
+    }
+    &:nth-child(1) {
+      padding-right: 15px;
+    }
+    &:nth-child(2) {
+      padding-left: 15px;
     }
   }
   &__input {
@@ -73,6 +79,11 @@
     }
   }
   &__text {
+    font-family: 'Source Sans Pro', sans-serif;
+    @include font(normal, 16px, 24px);
+    @media (max-width: $desktop) {
+      @include font(normal, 11px, 16px);
+    }
     padding-left: 12px;
     @media (max-width: $desktop) {
       padding-left: 6px;
