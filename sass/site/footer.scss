@@ -13,6 +13,9 @@
     width: 25%;
     @media (max-width: $tablet) {
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     &--indent {
       padding-bottom: 15px;
@@ -158,9 +161,9 @@
     }
     color: $darker;
     svg {
-      @include square-size($mark-small);
+      @include square-size(30px);
       @media (max-width: $desktop) {
-        @include square-size($mark-small);
+        @include square-size(15px);
       }
     }
   }
