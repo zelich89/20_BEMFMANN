@@ -133,6 +133,9 @@
         <symbol viewBox="0 0 15 12" id="icon-comments">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.89543 0 2V7C0 8.10457 0.89543 9 2 9H3V12L7 9H12C13.1046 9 14 8.10457 14 7V2C14 0.895431 13.1046 0 12 0H2Z" fill="currentColor"/>
         </symbol>
+        <symbol viewBox="0 0 13 20" id="icon-right">
+            <path d="M0 0L8 8L0 16" transform="translate(2 2)" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" />
+        </symbol>
 
     </svg>
 </head>
@@ -579,7 +582,7 @@
     <div class="team__warp">
         <div class="team__content team__content--indent">
             <div class="team__items team__items--indent">
-                <div class="team__item team__item--white ">
+                <div class="team__item team__item--white active">
                     <div class="team__name team__name--indent">Gregoryy Francis</div>
                     <div class="team__posit team__posit--indent">CHIEF ENGINEER</div>
                     <div class="team__description team__description--indent">I’ve started to work in company at 2009. Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</div>
@@ -641,7 +644,7 @@
                         <span><a href="tel:952-775-6021">952-775-6021</a></span>
                     </div>
                 </div>
-                <div class="contacts__social social contacts__social--indent">
+                <div class="contacts__social social contacts__social--indent--indent">
                     <div class="social__icon social__icon--darker social__icon--big">
                         <svg class="svg">
                             <use xlink:href="#icon-pinterest"></use>
@@ -697,9 +700,14 @@
                 <div class="footer__text footer__text--indent">Hoffman UI Kit was made to help you quickly create beautiful layouts of responsive websites.</div>
                 <div class="footer__copyright footer__copyright--indent">© 2016 Created by Goldenfox</div>
                 <div class="footer__text footer__text--upper footer__text--indent">SUBSCRIBE TO OUR NEWS</div>
-                <label class="footer__input-block">
-                    <input class="footer__input" type="text">
-                </label>
+                <div class="footer__input-block footer__input-block--indent">
+                    <input id="email" class="footer__input" type="text" placeholder="Your Email">
+                    <div class="footer__box">
+                        <svg class="svg">
+                            <use xlink:href="#icon-right"></use>
+                        </svg>
+                    </div>
+                </div>
             </div>
             <div class="footer__links">
                 <div class="footer__nav footer__nav--indent">

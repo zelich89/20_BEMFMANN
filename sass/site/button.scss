@@ -8,13 +8,15 @@
   border: none;
   outline: 0;
   border-radius: 50px;
-  @media (max-width: $desktop) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
   transition: all .2s ease-in-out;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
+  @include font(normal, 16px, 20px);
+  @media (max-width: $desktop) {
+    @include font(normal, 11px, 13px);
+  }
+  @media (max-width: $tablet) {
+  }
   &--primary-color {
     background-color: $primary;
     color: $darker;

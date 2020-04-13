@@ -38,9 +38,12 @@
     }
   }
   &__item {
-
+    display: none;
     &--white {
       color: $white;
+    }
+    &.active {
+      display: block;
     }
   }
   &__name {

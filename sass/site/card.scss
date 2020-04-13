@@ -11,6 +11,17 @@
   @media (max-width: $tablet) {
     padding: 25px;
   }
+  //////////////////////////////////////// Anim
+  transition: all $transition-time ease;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  &:active, &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  &:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  }
+  ////////////////////////////////////////
   &__name {
     text-transform: uppercase;
     &--primary {
