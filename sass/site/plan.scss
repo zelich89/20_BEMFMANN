@@ -13,6 +13,7 @@
   }
 
   &__items {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 0 60px;
@@ -31,12 +32,14 @@
     }
     @media (max-width: $tablet  ) {
       width: 100%;
-      display: none;
+      position: absolute;
+      //display: none;
       /*&:not(:first-child) {
         display: none;
       }*/
       &:nth-child(2) {
-        display: block;
+        position: relative;
+        //display: block;
       }
     }
   }
