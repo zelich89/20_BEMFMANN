@@ -1,31 +1,45 @@
 .team {
-  position: relative;
   &__warp {
     @extend .warps;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     position: relative;
-    z-index: 1;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+  &__items {
     height: 100%;
-    &--white {
-      color: $white;
+  }
+  &__item {
+    position: relative;
+    //display: none;
+    justify-content: flex-end;
+    height: 100%;
+    &.active {
+      //display: flex;
     }
   }
-  &__container {
-    height: 100%;
-  }
-  &__block {
-    width: 100%;
-    position: relative;
-  }
-  &__image {
+  &__photo {
     width: 100%;
     object-fit: cover;
+    @media (max-width: $tablet) {
+      width: auto;
+      height: 100%;
+    }
   }
-  &__add {
+
+  &__content {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    //background-color: rgba(red, .1);
+    color: #fff;
     &--indent {
       padding-top: 230px;
       padding-bottom: 70px;
@@ -41,6 +55,26 @@
       }
     }
   }
+  &__block {
+    float: right;
+    width: 40%;
+    @media (max-width: $desktop) {
+      width: 50%;
+    }
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+    &--indent {
+      padding-right: 90px;
+      @media (max-width: $desktop) {
+        padding-right: 40px;
+      }
+      @media (max-width: $tablet) {
+        padding-right: 0;
+      }
+    }
+  }
+
   &__name {
 
     font-family: 'Montserrat', sans-serif;
@@ -79,10 +113,9 @@
     }
   }
   &__pagination {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
+    @media (max-width: $tablet) {
+      display: flex;
+    }
   }
   &__dot {
     width: 10px;
@@ -90,7 +123,7 @@
     border: 2px solid $white;
     border-radius: 50%;
     cursor: pointer;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     transition:  background-color $transition-time ease;
     @media (max-width: $tablet) {
       width: 8px;
@@ -103,6 +136,7 @@
       background-color: $white;
     }
   }
+
 
   &--height {
     height: 590px;
