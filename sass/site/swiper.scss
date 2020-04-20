@@ -1,0 +1,30 @@
+.swiper-container {
+  //width: 1200px;
+  //height: 100%;
+}
+
+.swiper-slide {
+  //background-color: rgba(0,0,0,0.3);
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  opacity: 1 !important;
+  border: 2px solid $white;
+  background-color: transparent !important;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 10px !important;
+  transition:  background-color $transition-time ease;
+  @media (max-width: $tablet) {
+    width: 8px;
+    height: 8px;
+    border: 1px solid $white;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  &-active {
+    background-color: $white !important;
+  }
+}

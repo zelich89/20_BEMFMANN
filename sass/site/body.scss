@@ -20,6 +20,10 @@ img {
   vertical-align: top;
 }
 
+.dn {
+  display: none;
+}
+
 .visible-on-desktop {
   @media (max-width: $desktop) {
     display: none;

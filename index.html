@@ -12,6 +12,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <title>BEMFMANN</title>
 
     <svg style="display: none;">
@@ -479,7 +481,7 @@
                         <div class="card__priсe">299</div>
                     </div>
                     <div class="card__long card__long--indent">Year</div>
-                    <div class="card__description card__description--indent">Team Account <br>500 GB Discspace <br>Unlimited Uploads per day</div>
+                    <div class="card__description card__description--indent">team2 Account <br>500 GB Discspace <br>Unlimited Uploads per day</div>
                     <div class="card__button button button--primary-color button--small-size">PURCHASE</div>
                 </div>
             </div>
@@ -578,26 +580,131 @@
 
 
 <!--        6       -->
-<section class="team team--bg">
-    <div class="team__warp">
-        <div class="team__content team__content--indent">
-            <div class="team__items team__items--indent">
-                <div class="team__item team__item--white active">
-                    <div class="team__name team__name--indent">Gregoryy Francis</div>
-                    <div class="team__posit team__posit--indent">CHIEF ENGINEER</div>
-                    <div class="team__description team__description--indent">I’ve started to work in company at 2009. Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</div>
+
+<!--<section class="command command&#45;&#45;height">
+
+    &lt;!&ndash; Slider main container &ndash;&gt;
+    <div class="swiper-container">
+        &lt;!&ndash; Additional required wrapper &ndash;&gt;
+        <div class="swiper-wrapper">
+            &lt;!&ndash; Slides &ndash;&gt;
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        &lt;!&ndash; If we need pagination &ndash;&gt;
+        <div class="swiper-pagination"></div>
+
+        &lt;!&ndash; If we need navigation buttons &ndash;&gt;
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+    </div>
+</section>-->
+
+<section class="team team--height">
+    <div class="team__items swiper-container my-swiper-container sw1">
+
+        <div class="swiper-wrapper">
+            <div class="team__item swiper-slide">
+                <img class="team__photo" src="images/team.jpg" alt="T1">
+                <div class="team__content team__content--indent">
+                    <div class="team__warp">
+                        <div class="team__block team__block--indent">
+                            <div class="team__name team__name--indent">Gregoryy Francis</div>
+                            <div class="team__posit team__posit--indent">CHIEF ENGINEER</div>
+                            <div class="team__description team__description--indent">I’ve started to work in company at 2009. Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</div>
+                        </div>
+                        <div class="team__pagination">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="team__pagnation">
-                <div class="team__dot active"></div>
-                <div class="team__dot"></div>
-                <div class="team__dot"></div>
-                <div class="team__dot"></div>
-                <div class="team__dot"></div>
+            <div class="team__item swiper-slide">
+                <img class="team__photo" src="images/team.jpg" alt="T1">
+                <div class="team__content team__content--indent">
+                    <div class="team__warp">
+                        <div class="team__block team__block--indent">
+                            <div class="team__name team__name--indent">Francis Gregoryy</div>
+                            <div class="team__posit team__posit--indent">ENGINEER CHIEF</div>
+                            <div class="team__description team__description--indent">I’ve started to work in company at 2009. Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</div>
+                        </div>
+                        <div class="team__pagination">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team__item swiper-slide">
+                <img class="team__photo" src="images/team.jpg" alt="T1">
+                <div class="team__content team__content--indent">
+                    <div class="team__warp">
+                        <div class="team__block team__block--indent">
+                            <div class="team__name team__name--indent">Francis Gregoryy</div>
+                            <div class="team__posit team__posit--indent">ENGINEER CHIEF</div>
+                            <div class="team__description team__description--indent">I’ve started to work in company at 2009. Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</div>
+                        </div>
+                        <div class="team__pagination">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team__item swiper-slide">
+                <img class="team__photo" src="images/team.jpg" alt="T1">
+                <div class="team__content team__content--indent">
+                    <div class="team__warp">
+                        <div class="team__block team__block--indent">
+                            <div class="team__name team__name--indent">Francis Gregoryy</div>
+                            <div class="team__posit team__posit--indent">ENGINEER CHIEF</div>
+                            <div class="team__description team__description--indent">I’ve started to work in company at 2009. Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</div>
+                        </div>
+                        <div class="team__pagination">
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team__item swiper-slide">
+                <img class="team__photo" src="images/team.jpg" alt="T1">
+                <div class="team__content team__content--indent">
+                    <div class="team__warp">
+                        <div class="team__block team__block--indent">
+                            <div class="team__name team__name--indent">Francis Gregoryy</div>
+                            <div class="team__posit team__posit--indent">ENGINEER CHIEF</div>
+                            <div class="team__description team__description--indent">I’ve started to work in company at 2009. Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</div>
+                        </div>
+                        <div class="team__pagination">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!--<section class="team2 team2&#45;&#45;bg dn">
+    <div class="team2__warp">
+        <div class="team2__content team2__content&#45;&#45;indent">
+            <div class="team2__items team2__items&#45;&#45;indent">
+                <div class="team2__item team2__item&#45;&#45;white active">
+                    <div class="team2__name team2__name&#45;&#45;indent">Gregoryy Francis</div>
+                    <div class="team2__posit team2__posit&#45;&#45;indent">CHIEF ENGINEER</div>
+                    <div class="team2__description team2__description&#45;&#45;indent">I’ve started to work in company at 2009. Photographs are a way of preserving a moment in our lives for the rest of our lives. Many of us have at least been tempted at the flashy array of photo printers which seemingly leap off the shelves at even the least tech-savvy. It surely seems old fashioned to talk about 35mm film and non-digital cameras in today’s day and age.</div>
+                </div>
+            </div>
+            <div class="team2__pagnation">
+                <div class="team2__dot active"></div>
+                <div class="team2__dot"></div>
+                <div class="team2__dot"></div>
+                <div class="team2__dot"></div>
+                <div class="team2__dot"></div>
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
 <!--        7       -->
 <section class="contacts contacts--indent">
@@ -769,5 +876,25 @@
 </footer>
 
 <div class="zel1"></div>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var mySwiper = new Swiper ('.sw1', {
+        // direction: 'vertical',
+        speed: 2000,
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.team__pagination',
+            clickable: true,
+        },
+
+    })
+</script>
+
 </body>
 </html>
