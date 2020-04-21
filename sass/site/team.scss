@@ -12,13 +12,17 @@
   &__container {
     height: 100%;
   }
-  &__block {
+  &__item {
     width: 100%;
     position: relative;
   }
   &__image {
     width: 100%;
     object-fit: cover;
+    @media (max-width: $tablet) {
+      width: auto;
+      height: 100%;
+    }
   }
   &__add {
     position: absolute;
@@ -26,6 +30,16 @@
     right: 0;
     bottom: 0;
     left: 0;
+    &--content {
+      left: 50%;
+      width: 450px;
+      @media (max-width: $desktop) {
+        width: 350px;
+      }
+      @media (max-width: $tablet) {
+        left: 0;
+      }
+    }
     &--indent {
       padding-top: 230px;
       padding-bottom: 70px;
@@ -33,11 +47,11 @@
         padding-top: 100px;
         padding-bottom: 30px;
         padding-right: 40px;
-        @media (max-width: $tablet) {
-          padding-top: 35px;
-          padding-bottom: 30px;
-          padding-right: 0;
-        }
+      }
+      @media (max-width: $tablet) {
+        padding-top: 35px;
+        padding-bottom: 30px;
+        padding-right: 30px;
       }
     }
   }
@@ -67,6 +81,7 @@
     }
   }
   &__description {
+
     font-family: 'Source Sans Pro', sans-serif;
     @include font(normal, 18px, 24px);
     @media (max-width: $desktop) {
