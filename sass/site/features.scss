@@ -35,10 +35,29 @@
     @media (max-width: $tablet) {
       display: block;
     }
+    &--noteb {
+      @media (max-width: $desktop) {
+        &:after {
+          position: absolute;
+          content: '';
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 50%;
+          height: 342px;
+          background: url("images/notebook.png") no-repeat;
+        }
+      }
+      @media (max-width: $tablet) {
+      }
+    }
   }
   &__items {
     width: 30%;
     @media (max-width: $desktop) {
+      width: 50%;
+    }
+    @media (max-width: $tablet) {
       width: auto;
     }
 
@@ -96,7 +115,7 @@
     overflow-x: hidden;
   }
   &__picture-big {
-    @media (max-width: $tablet) {
+    @media (max-width: $desktop) {
       display: none;
     }
   }

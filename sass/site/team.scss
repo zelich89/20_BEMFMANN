@@ -98,6 +98,14 @@
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
+    @media (max-width: $tablet) {
+      display: flex;
+      top: auto;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      justify-content: center;
+    }
   }
   &__dot {
     width: 10px;
