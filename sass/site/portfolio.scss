@@ -1,6 +1,10 @@
 .portfolio {
   &__warp {
     @extend .warps;
+    @media (max-width: $tablet) {
+      margin: 0;
+      max-width: max-content;
+    }
   }
   &__title {
     text-align: center;

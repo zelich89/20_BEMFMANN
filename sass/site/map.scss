@@ -19,9 +19,11 @@
       position: absolute;
       border: 15px solid transparent;
       border-top-color: $primary;
-      top: 99%;
+      //top: 99%;
+      bottom: 0;
       left: 25%;
-      transform: translateX(-50%) scaleX(.5);
+      transform: translateY(100%);
+      border-width: 15px 8px 0 8px;
     }
   }
   &__address {

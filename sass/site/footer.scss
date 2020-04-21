@@ -23,10 +23,10 @@
   }
   &__logo {
     &--indent {
-      margin-left: -6px;
+      //margin-left: -6px;
       margin-bottom: 10px;
       @media (max-width: $desktop) {
-        margin-left: -10px;
+        //margin-left: -10px;
       }
     }
   }
