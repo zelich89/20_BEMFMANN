@@ -58,7 +58,9 @@
   }
   &__avatar {
     border-radius: 50%;
-    //border: 2px solid rgba($lighter, .25);
+    border: 2px solid rgba($lighter, .25);
+    object-fit: cover;
+    object-position: top;
     @include square-size(100px);
     @media (max-width: $desktop) {
     @include square-size(64px);
