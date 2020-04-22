@@ -28,4 +28,8 @@
       display: none;
     }
   }
+  &--indent {
+    margin-top: 10px;
+    transform: translateX(12%);
+  }
 }

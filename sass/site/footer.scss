@@ -24,7 +24,7 @@
   &__logo {
     &--indent {
       //margin-left: -6px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       @media (max-width: $desktop) {
         //margin-left: -10px;
       }
@@ -58,7 +58,7 @@
       text-transform: uppercase;
     }
     &--indent {
-      padding-bottom: 15px;
+      padding-bottom: 20px;
     }
   }
   &__copyright {
@@ -89,7 +89,7 @@
     &--indent {
       padding-bottom: 45px;
       @media (max-width: $desktop) {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
       }
     }
   }

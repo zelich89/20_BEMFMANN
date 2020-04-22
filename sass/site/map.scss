@@ -2,8 +2,8 @@
   position: relative;
   &__block {
     position: absolute;
-    top: 62%;
-    left: 65%;
+    top: 48%;
+    left: 52%;
     width: 190px;
     height: 80px;
     border-radius: 5px;
@@ -21,7 +21,7 @@
       border-top-color: $primary;
       //top: 99%;
       bottom: 0;
-      left: 25%;
+      left: 50%;
       transform: translateY(100%);
       border-width: 15px 8px 0 8px;
     }
@@ -35,6 +35,15 @@
 
     &--normal {
       font-weight: normal;
+    }
+  }
+  &--height {
+    height: 400px;
+    @media (max-width: $desktop) {
+      height: 216px;
+    }
+    @media (max-width: $tablet) {
+      height: 268px;
     }
   }
 }

@@ -18,6 +18,19 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: $tablet) {
+      padding: 0 15px;
+    }
+
+    &--indent {
+      margin-bottom: 68px;
+      @media (max-width: $desktop) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: $tablet) {
+        margin-bottom: 25px;
+      }
+    }
   }
   &__item {
     position: relative;
@@ -92,7 +105,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 50px 25px 50px 50px;
+    padding: 60px 25px 50px 40px;
     &--left {
       left: 50%;
       @media (max-width: $tablet) {
@@ -103,7 +116,7 @@
       padding: 30px 20px 20px 20px;
     }
     @media (max-width: $tablet) {
-      padding: 10px 20px 10px 25px;
+      padding: 15px 20px 10px 25px;
     }
     &--color-darker {
       color: $darker;
@@ -123,12 +136,12 @@
       height: 2px;
     }
     &--indent {
-      margin-bottom: 40px;
+      margin-bottom: 27px;
       @media (max-width: $desktop) {
-        margin-bottom: 25px;
+        margin-bottom: 19px;
       }
       @media (max-width: $tablet) {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
     }
     &--color-darker {
@@ -152,7 +165,7 @@
     font-family: 'Montserrat', sans-serif;
     @include font(bold, 64px, 1);
     @media (max-width: $desktop) {
-      @include font(bold, 36px, 1);
+      @include font(bold, 36px, 1.1);
     }
     @media (max-width: $tablet) {
       @include font(bold, 32px, 1);
@@ -160,7 +173,7 @@
   }
   &__img {
     width: 100%;
-    height: 360px;
+    height: 380px;
     object-fit: cover;
     @media (max-width: $desktop) {
       height: 240px;
@@ -170,6 +183,7 @@
     }
     &--opacity {
       opacity: 0;
+      pointer-events: none;
     }
   }
   &__name {
@@ -199,12 +213,12 @@
       @include font(normal, 12px, 16px);
     }
     &--indent {
-      padding-bottom: 30px;
+      padding-bottom: 34px;
       @media (max-width: $desktop) {
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
       @media (max-width: $tablet) {
-        padding-bottom: 2px;
+        padding-bottom: 10px;
       }
     }
   }
@@ -213,15 +227,6 @@
     list-style:none;
     justify-content: center;
     //background-color: rgba(black, 0.1);/////////////////////////
-    &--indent {
-      margin-top: 65px;
-      @media (max-width: $desktop) {
-        margin-top: 35px;
-      }
-      @media (max-width: $tablet) {
-        margin-top: 25px;
-      }
-    }
   }
   &__element {
     @media (max-width: $tablet) {
@@ -253,10 +258,10 @@
   }
 
   &--indent {
-    padding-top: 75px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     @media (max-width: $desktop) {
-      padding-top: 30px;
+      padding-top: 35px;
       padding-bottom: 70px;
     }
   }

@@ -24,6 +24,11 @@
       height: 260px;
       padding: 0 30px;
     }
+    &--indent {
+      @media (max-width: $tablet) {
+        margin-bottom: 48px;
+      }
+    }
   }
   &__item {
     width: 33%;
@@ -47,6 +52,28 @@
       }
     }
   }
+  &__words {
+    display: none;
+    @media (max-width: $tablet  ) {
+      display: flex;
+      justify-content: space-around;
+    }
+    &--indent {
+
+    }
+  }
+  &__word {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    @include font(bold, 12px, 16px);
+    padding: 5px 25px;
+    background-color: rgba($light, .5);
+    border-radius: 20px;
+    transition: background-color $transition-time ease;
+    &.active {
+      background-color: $primary;
+    }
+  }
 
   &--bg {
     background-color: rgba($light, .5);
@@ -55,8 +82,11 @@
     padding-top: 45px;
     padding-bottom: 110px;
     @media (max-width: $desktop) {
-      padding-top: 30px;
       padding-bottom: 70px;
+    }
+    @media (max-width: $tablet  ) {
+      padding-top: 5px;
+      padding-bottom: 40px;
     }
   }
 }

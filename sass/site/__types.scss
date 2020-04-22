@@ -1,9 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
-h1 {
+h1, .h1 {
   font-family: 'Montserrat', sans-serif;
   @include font(bold, 44px, 48px);
   @media (max-width: $desktop) {
@@ -14,7 +14,7 @@ h1 {
   }
 }
 
-h2 {
+h2, .h2 {
   font-family: 'Montserrat', sans-serif;
   @include font(bold, 44px, 48px);
   @media (max-width: $desktop) {
@@ -26,7 +26,7 @@ h2 {
 }
 
 
-h3 {
+h3, .h3 {
   font-family: 'Montserrat', sans-serif;
   @include font(bold, 18px, 30px);
   @media (max-width: $desktop) {
@@ -34,7 +34,7 @@ h3 {
   }
 }
 
-h4 {
+h4, .h4 {
   font-family: 'Source Sans Pro', sans-serif;
   @include font(normal, 16px, 24px);
   @media (max-width: $desktop) {
