@@ -59,6 +59,12 @@
     }
     &--indent {
       padding-bottom: 20px;
+      @media (max-width: $desktop) {
+        padding-bottom: 10px;
+      }
+    }
+    &--indent2 {
+      padding-bottom: 20px;
     }
   }
   &__copyright {
@@ -69,7 +75,7 @@
       @include font(normal, 11px, 16px);
     }
     @media (max-width: $tablet) {
-      display: none;
+      text-align: center;
     }
     &--indent {
       padding-bottom: 25px;
@@ -87,9 +93,12 @@
   &__nav {
 
     &--indent {
-      padding-bottom: 45px;
+      padding-bottom: 40px;
       @media (max-width: $desktop) {
         padding-bottom: 20px;
+      }
+      @media (max-width: $tablet) {
+        padding: 0 0 20px 30px;
       }
     }
   }
@@ -103,6 +112,7 @@
     &--indent {
 
       @media (max-width: $tablet) {
+        margin-top: 5px;
         margin-bottom: 20px;
       }
     }
@@ -128,9 +138,22 @@
     }
   }
   &__social-block {
+    width: 63%;
     float: right;
     @media (max-width: $tablet) {
       float: none;
+      width: 100%;
+    }
+    &--indent {
+      @media (max-width: $tablet) {
+        padding-bottom: 10px;
+      }
+    }
+  }
+  &__social {
+    justify-content: space-between;
+    @media (max-width: $tablet) {
+      padding: 0 30px;
     }
   }
   &__items {
@@ -140,7 +163,7 @@
     width: 33%;
     color: $white;
     font-family: 'Source Sans Pro', sans-serif;
-    @include font(normal, 18px, 24px);
+    @include font(normal, 18px, 25px);
     padding-bottom: 10px;
     @media (max-width: $desktop) {
       @include font(normal, 12px, 16px);
@@ -174,8 +197,11 @@
     background-color: $darker;
   }
   &--indent {
-    padding: 40px 0;
+    padding: 40px 0 50px 0;
     @media (max-width: $desktop) {
+      padding: 25px 0 35px 0
+    }
+    @media (max-width: $tablet) {
       padding: 25px 0;
     }
   }

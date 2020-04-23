@@ -9,6 +9,9 @@
       @media (max-width: $desktop) {
         padding-bottom: 30px;
       }
+      @media (max-width: $tablet) {
+        padding-bottom: 50px;
+      }
     }
   }
 
@@ -26,7 +29,7 @@
     }
     &--indent {
       @media (max-width: $tablet) {
-        margin-bottom: 48px;
+        margin-bottom: 30px;
       }
     }
   }
@@ -41,14 +44,21 @@
       position: absolute;
       top: 0;
       left: 0;
-      //display: none;
-      /*&:not(:first-child) {
-        display: none;
-      }*/
-      &:nth-child(2) {
-        //position: relative;
+      padding: 0 50px;
+      &:nth-child(1) {
         z-index: 1;
-        //display: block;
+        .card {
+          transform: translateY(-25px) scale(.9);
+        }
+      }
+      &:nth-child(2) {
+        z-index: 2;
+        z-index: 2;
+      }
+      &:nth-child(3) {
+        .card {
+          transform: translateY(-50px) scale(.8);
+        }
       }
     }
   }
@@ -67,7 +77,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     @include font(bold, 12px, 16px);
     padding: 5px 25px;
-    background-color: rgba($light, .5);
+    background-color: transparent;
     border-radius: 20px;
     transition: background-color $transition-time ease;
     &.active {

@@ -36,7 +36,7 @@
     margin-right: 30px;
     transition: all $transition-time ease;
     border-radius: 7px;
-    border: 1px solid darkmagenta; ///////////////////////////////////////////////////
+    border: 1px solid transparent; ///////////////////////////////////////////////////
     @media (max-width: $desktop) {
       width: 47%;
       margin-top: 15px;

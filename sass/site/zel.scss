@@ -1,3 +1,11 @@
 .zel {
   height: 450px;
 }
+
+.z-flex {
+  @media (max-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

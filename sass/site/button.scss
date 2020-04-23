@@ -22,10 +22,18 @@
   &--primary-color {
     background-color: $primary;
     color: $darker;
+    transition: background-color .5s ease;
+    &:hover {
+      background-color: darken($primary, 20%);
+    }
   }
   &--darker-color {
     background-color: $darker;
     color: $white;
+    transition: background-color .5s ease;
+    &:hover {
+      background-color: lighten($darker, 20%);
+    }
   }
   &--main-size {
     padding-top: 12px;
@@ -41,7 +49,7 @@
       padding: 10px 45px;
     }
     @media (max-width: $tablet) {
-      padding: 7px 38px;
+      padding: 9px 48px;
     }
   }
   &--small-size {

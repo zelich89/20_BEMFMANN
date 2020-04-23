@@ -8,15 +8,12 @@
     justify-content: center;
     cursor: pointer;
     color: $white;
-
-
     &--primary {
       color: $primary;
     }
     &--darker {
       color: $darker;
     }
-
     &--big {
       @include square-size(24px);
       margin-right: 45px;
@@ -24,9 +21,8 @@
         @include square-size(24px);
       }
       @media (max-width: $desktop) {
-        @include square-size(16px);
         .svg {
-          @include square-size(16px);
+          @include square-size(20px);
         }
         margin-right: 20px;
       }
@@ -36,13 +32,15 @@
       .svg {
         @include square-size(24px);
       }
-      margin-right: 33px;
+      //margin-right: 37px;
       @media (max-width: $desktop) {
-        @include square-size(16px);
         .svg {
-          @include square-size(16px);
+          @include square-size(18px);
         }
-        margin-right: 20px;
+        //margin-right: 20px;
+      }
+      &:last-child {
+        //margin-right: 25px;
       }
     }
     &--small {
@@ -53,9 +51,12 @@
       .svg {
       }
       margin-right: 15px;
-    }/*
-    &:not(:last-child) {
-      margin-right: 15px;
-    }*/
+    }
+    &--indent {
+      margin-right: 5px;
+    }
+  }
+  &__wrapper {
+    display: flex;
   }
 }

@@ -1,4 +1,5 @@
 .features {
+  position: relative;
   &__warp {
     @extend .warps;
   }
@@ -37,20 +38,22 @@
       display: block;
     }
     &--noteb {
-      @media (max-width: $desktop) {
         &:after {
           position: absolute;
           content: '';
-          top: 0;
+          top: 243px;
           right: 0;
           bottom: 0;
-          left: 50%;
-          height: 342px;
-          background: url("images/notebook.png") no-repeat;
+          left: 42%;
+          background: url("../images/notebook.png") no-repeat;
+          @media (max-width: $desktop) {
+            top: 176px;
+          }
+          @media (max-width: $tablet) {
+            display: none;
+          }
         }
-      }
-      @media (max-width: $tablet) {
-      }
+
     }
   }
   &__items {

@@ -11,8 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: $desktop) {
+      top: 30%;
+      left: 48%;
+      height: 70px;
+    }
     @media (max-width: $tablet) {
-      left: 10%;
+      top: 35%;
+      left: 24%;
     }
     &:after {
       content: '';
