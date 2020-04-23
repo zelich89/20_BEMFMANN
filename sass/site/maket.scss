@@ -7,8 +7,8 @@
     opacity: .3;
     z-index: 11;
     pointer-events: none;
-    display: none;
     &--desktop {
+    display: none;
       @if $maket-visible == 1 {
         display: block;
         @media (max-width: $desktop) {
@@ -17,6 +17,7 @@
       }
     }
     &--tablet {
+    display: none;
       @if $maket-visible == 1 {
         @media (max-width: $desktop) {
           display: block;
@@ -27,6 +28,7 @@
       }
     }
     &--mobile {
+    display: none;
       @if $maket-visible == 1 {
         @media (max-width: $tablet) {
           display: block;
