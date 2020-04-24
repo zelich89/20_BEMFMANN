@@ -9,3 +9,13 @@
     align-items: center;
   }
 }
+
+.z-line {
+  width: 100%;
+  height: 15px;
+  background-color: #ffffff;
+  transition: height 12s ease;
+  &:hover {
+    height: 100px;
+  }
+}

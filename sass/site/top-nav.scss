@@ -3,13 +3,19 @@
     list-style: none;
     display: flex;
     text-transform: uppercase;
+    transition: height $transition-time ease, opacity $transition-time ease;
     @include font(bold, 18px, 24px);
     @media (max-width: $desktop) {
       @include font(bold, 12px, 16px);
     }
     font-family: 'Source Sans Pro', sans-serif;
     @media (max-width: $tablet) {
-      display: none;
+      @include font(bold, 18px, 24px);
+      //display: none;
+      //height: 82px;
+      height: 0;
+      opacity: 0;
+      flex-direction: column;
     }
     &--color {
       color: $white;
@@ -25,11 +31,14 @@
       padding: 0 8px;
     }
     @media (max-width: $tablet) {
-      display: none;
+      //display: none;
     }
   }
   &--indent {
     margin-top: 10px;
-    transform: translateX(12%);
+    //transform: translateX(12%);
+    @media (max-width: $tablet) {
+      margin-top: 20px;
+    }
   }
 }
