@@ -45,21 +45,20 @@
       top: 0;
       left: 0;
       padding: 0 50px;
-      &:nth-child(1) {
-        z-index: 1;
-        .card {
-          transform: translateY(-25px) scale(.9);
-        }
-      }
-      &:nth-child(2) {
-        z-index: 2;
-        z-index: 2;
-      }
-      &:nth-child(3) {
-        .card {
-          transform: translateY(-50px) scale(.8);
-        }
-      }
+      //&:nth-child(1) {
+      //  z-index: 1;
+      //  .card {
+      //    transform: translateY(-25px) scale(.9);
+      //  }
+      //}
+      //&:nth-child(2) {
+      //  z-index: 2;
+      //}
+      //&:nth-child(3) {
+      //  .card {
+      //    transform: translateY(-50px) scale(.8);
+      //  }
+      //}
     }
   }
   &__words {
@@ -80,8 +79,31 @@
     background-color: transparent;
     border-radius: 20px;
     transition: background-color $transition-time ease;
-    &.active {
+/*    &.active {
       background-color: $primary;
+    }*/
+    &--primary.active {
+      background-color: $primary;
+      color: $darker;
+    }
+    &--darker.active {
+      background-color: $darker;
+      color: $white;
+    }
+    &--grad {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 8px;
+        z-index: 0;
+        background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, .15) 100%);
+        pointer-events: none;
+      }
     }
   }
 
