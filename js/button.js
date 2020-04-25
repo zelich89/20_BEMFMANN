@@ -2,7 +2,6 @@ $(".js-button-1").click(function() {
     if (!$(".js-card-1").hasClass('active')) {
         $(".js-card-1").addClass('active');
         $(".js-card-1").removeClass('middle');
-    }
 
     if (!$(".js-card-2").hasClass('active') && !$(".js-card-2").hasClass('middle')) {
         $(".js-card-2").addClass('middle');
@@ -33,6 +32,7 @@ $(".js-button-1").click(function() {
         $(".js-button-2").removeClass('active');
         $(".js-button-3").removeClass('active');
     }
+}
 })
 
 
@@ -41,7 +41,6 @@ $(".js-button-2").click(function() {
     if (!$(".js-card-2").hasClass('active')) {
         $(".js-card-2").addClass('active');
         $(".js-card-2").removeClass('middle');
-    }
 
     if (!$(".js-card-3").hasClass('active') && !$(".js-card-3").hasClass('middle')) {
         $(".js-card-3").addClass('middle');
@@ -72,6 +71,7 @@ $(".js-button-2").click(function() {
         $(".js-button-1").removeClass('active');
         $(".js-button-3").removeClass('active');
     }
+}
 })
 
 
@@ -80,7 +80,6 @@ $(".js-button-3").click(function() {
     if (!$(".js-card-3").hasClass('active')) {
         $(".js-card-3").addClass('active');
         $(".js-card-3").removeClass('middle');
-    }
 
     if (!$(".js-card-1").hasClass('active') && !$(".js-card-1").hasClass('middle')) {
         $(".js-card-1").addClass('middle');
@@ -111,6 +110,7 @@ $(".js-button-3").click(function() {
         $(".js-button-1").removeClass('active');
         $(".js-button-2").removeClass('active');
     }
+}
 })
 
 /*$(".js-button-2").click(function() {
