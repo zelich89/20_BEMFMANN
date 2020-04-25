@@ -16,16 +16,16 @@ $(".js-button-1").click(function() {
         }, 200);
     }
 
+    if (!$(".js-card-3").hasClass('active') && !$(".js-card-3").hasClass('middle')) {
+        $(".js-card-3").addClass('middle');
+    }
+
     if ($(".js-card-3").hasClass('active')) {
         $(".js-card-3").removeClass('active');
         $(".js-card-3").addClass('hide');
         setTimeout (function() {
             $(".js-card-3").removeClass('hide');
         }, 200);
-    }
-
-    if (!$(".js-card-3").hasClass('active') && !$(".js-card-3").hasClass('middle')) {
-        $(".js-card-3").addClass('middle');
     }
 
     if (!$("js-button-1").hasClass('active')) {
